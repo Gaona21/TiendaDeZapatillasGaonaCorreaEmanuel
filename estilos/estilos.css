@@ -1,0 +1,269 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+/* FUENTES PARA USAR
+font-family: 'Bangers', cursive;
+font-family: 'Bebas Neue', cursive;
+font-family: 'Fira Sans Extra Condensed', sans-serif;*/
+
+.menu, .contNav{
+	background: black;
+}
+
+.logoMenu{
+	color: white;
+	font-size: 30px;
+	font-family: 'Bebas Neue', cursive;
+}
+
+.linkMenu{
+	color: white;
+	font-size: 18px;
+	font-family: 'Bebas Neue', cursive;
+}
+
+.linkMenu:hover{
+	color: white;
+	background: rgb(50 50 50 / 18%);
+}
+
+.logoMenu:hover{
+	color: White;
+}
+
+.cajaSubMenu{
+	background: black;
+}
+
+.carousel-inner{
+	height: 500px;
+}
+
+.contenedorSubtitulo{
+	width: 90%;
+	margin: 20px auto;
+	border-top:1px solid rgb(0 0 0 / 18%) ;
+	text-align: center;
+}
+
+.Subtitulo{
+	font-family:'Bebas Neue', cursive;
+	margin: 5px 0px 0px 0px;
+}
+
+.textoOferta{
+	font-family: 'Fira Sans Condensed', sans-serif;
+	font-size: 20px;
+	margin: 0px;
+}
+
+.contenedorCategoriaNA{
+	width: 90%;
+	margin: auto;
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.contenedorAdidas, .contenedorNike{
+	width: 50%;
+	margin: 10px 10px 10px 0px;
+	filter: blur(3px);
+	overflow:hidden;
+}
+
+.contenedorAdidas:hover{
+	box-shadow: 5px 5px 7px #aaaaaa;
+	transition: 0.5s;
+	filter: blur(0px);
+}
+
+.contenedorNike:hover{
+	box-shadow: 5px 5px 7px #aaaaaa;
+	transition: 0.5s;
+	filter: blur(0px);
+}
+
+.contenedorAdidas:hover .imgLogo {
+	-webkit-transform:scale(1.1);
+	transform:scale(1.1);
+	transition: 1s;
+}
+
+.contenedorNike:hover .imgLogo {
+	-webkit-transform:scale(1.1);
+	transform:scale(1.1);
+	transition: 1s;
+}
+
+.contenedorCard{
+	width: 90%;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.imgLogo{
+	width: 100%;
+}
+
+.Card{
+	width: 27%;
+	border:1px solid rgb(0 0 0 / 18%) ;
+	border-radius: 1.5%;
+	margin-bottom: 50px;
+}
+
+.Card:hover{
+	box-shadow: 10px 10px 5px #aaaaaa;
+	transition: 0.5s;
+}
+
+.imgCards{
+	width: 100%;
+}
+
+.contenedorImgCard{
+	width: 100%;
+	height: 400px;
+}
+
+.tituloCard{
+	font-family: 'Bebas Neue', cursive;
+	font-size: 30px;
+	text-align: center;
+}
+
+.botonCard{
+	display: block;
+	width: 100px;
+	text-decoration: none;
+	text-align: center;
+	margin: auto;
+	color: black;
+	background: #5778a3;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+.botonCard:hover{
+	border-radius: 20px 100px;
+	transition: 2s;
+}
+
+.piePagina{
+	width: 100%;
+	background: black;
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+	text-align: center;
+}
+
+.infoCreador{
+	width: 70%;
+	color: white;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 18px;
+	margin-top: 20px;
+}
+
+.menuRedesSociales{
+	width: 30%;
+	margin: auto;
+	color: white;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 20px;
+}
+
+.contenedorFormulario{
+	height: 75vh;
+	width: 100%;
+}
+
+.TituloNikeAdidas{
+	font-size: 40px;
+	width: 90%;
+	margin: auto;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+@media(max-width: 1024px){
+
+	.carousel-inner{
+		height: 390px;
+	}
+
+	.contenedorImgCard{
+		height: 300px;
+	}
+
+	.contenedorFormulario{
+		height: 1100%;
+	}
+
+}
+
+@media(max-width: 768px){
+
+	.carousel-inner{
+		height: 290px;
+	}
+
+	.Card{
+		width: 47%;
+	}
+
+	.contenedorImgCard{
+		height: 390px;
+	}
+
+	.contenedorAdidas, .contenedorNike {
+    	width: 50%;
+    	margin: 10px 10px 10px 0px;
+    	filter: blur(0px);
+    	overflow: hidden;
+	}
+}
+
+@media(max-width: 425px){
+
+	.carousel-inner{
+		height: 140px;
+	}
+
+	.contenedorCategoriaNA{
+		display: none;
+	}
+
+	.contenedorCard{
+		flex-direction: column;
+		align-content: space-around;
+	}
+
+	.Card{
+		width: 90%;
+	}
+
+	.contenedorImgCard{
+		height: 350px;
+	}
+
+	.piePagina{
+		flex-direction: column-reverse;
+		align-items: center;
+		display: flex;
+	}
+
+	.menuRedesSociales{
+		margin-top: 10px;
+	}
+
+}
